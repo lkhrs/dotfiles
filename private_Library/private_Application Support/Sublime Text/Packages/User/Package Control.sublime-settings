@@ -63,6 +63,6 @@
 	],
 	"repositories": [
 		"https://github.com/kaste/Package-x-Control",
-		"~/Library/Caches/Sublime Text/Cache/Package x Control/repository.json",
+		"/Users/luke/Library/Caches/Sublime Text/Cache/Package x Control/repository.json",
 	],
 }
