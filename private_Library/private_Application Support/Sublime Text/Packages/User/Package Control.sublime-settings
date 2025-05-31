@@ -21,6 +21,7 @@
 		"Inline Fold",
 		"Jinja2",
 		"JsPrettier",
+		"Laravel Blade",
 		"Liquid",
 		"LSP",
 		"LSP-basedpyright",
