@@ -1,0 +1,124 @@
+source $VIMRUNTIME/defaults.vim
+set number
+set showcmd
+set ruler
+set history=1000
+set autoindent
+
+if has('mouse')
+          set mouse=a
+        endif
+
+packadd! matchit
+
+" set tmp folder to keep swp in one place
+set directory^=$HOME/.vim/tmp//
+
+" netrw
+let g:netrw_banner       = 0
+let g:netrw_keepdir      = 0
+let g:netrw_liststyle    = 1 " or 3
+let g:netrw_sort_options = 'i'
+
+" open netrw automatically if dir
+autocmd VimEnter * if isdirectory(expand('<afile>')) | Explore | endif
+
+" Plug
+
+" Install Plug if it isn't there 
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plug config
+call plug#begin('~/.vim/plugged')
+
+" Plugins
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'Luxed/ayu-vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'phelipetls/vim-hugo'
+Plug 'easymotion/vim-easymotion'
+Plug 'rizzatti/dash.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'felixhummel/setcolors.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+" End plugins
+call plug#end()
+
+" Goyo.vim
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+" EasyAlign
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+    vmap <Enter> <Plug>(EasyAlign)
+
+    " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+    nmap ga <Plug>(EasyAlign)
+
+" Attempt at fallback for 256-color terminals
+ " if &term=~'wezterm' || &term=~'xterm-256color' || &term=~'xterm-kitty'
+ 	" let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+ 	" let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  " set termguicolors
+ 	" ayu
+ 	set background=dark
+ 	" let ayucolor="mirage"
+ 	" colorscheme ayu
+	" let g:airline_theme='ayu_mirage'
+	" let g:airline_theme='gruvbox'
+  " let g:airline_theme='catppuccin_mocha'
+ 	set notermguicolors
+  let g:gruvbox_italic=1
+ 	colorscheme gruvbox
+  " colorscheme catppuccin_frappe
+
+"" Coc.vim
+" stop Coc by default (but Coc is enabled)
+let g:coc_start_at_startup=0
+" manually start CoC (\cc)
+nmap <leader>cc :<C-u>CocStart<CR>
+nmap <leader>cs :call coc#rpc#stop()
+
+" use <tab> for trigger completion and navigate to the next complete item
+"function! s:check_back_space() abort
+"  let col = col('.') - 1
+"  return !col || getline('.')[col - 1]  =~ '\s'
+"endfunction
+"
+"inoremap <silent><expr> <Tab>
+"      \ pumvisible() ? "\<C-n>" :
+"      \ <SID>check_back_space() ? "\<Tab>" :
+"      \ coc#refresh()
+
+"" Airline
+let g:airline_powerline_fonts = 1
+
+" Hugo template detection
+function DetectGoHtmlTmpl()
+    if expand('%:e') == "html" && search("{{") != 0
+        setfiletype gohtmltmpl
+    endif
+endfunction
+
+augroup filetypedetect
+    " gohtmltmpl
+    au BufRead,BufNewFile *.html call DetectGoHtmlTmpl()
+augroup END

@@ -1,0 +1,68 @@
+{{- /* get hostname without domain */}}
+{{- $computerName := output "scutil" "--get" "ComputerName" | trim }}
+
+{{- /* common packages */}}
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+brew bundle --file=/dev/stdin <<EOF
+tap "homebrew/aliases"
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/command-not-found"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "homebrew/test-bot"
+tap "helix-editor/helix"
+tap "shihanng/gig"
+brew "bat"
+brew "dog"
+brew "dust"
+brew "eza"
+brew "fd"
+brew "fish"
+brew "fisher"
+brew "starship"
+brew "fx"
+brew "fzf"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "git-filter-repo"
+brew "git-lfs"
+brew "helix"
+brew "icann-rdap"
+brew "jq"
+brew "ripgrep"
+brew "rsync"
+brew "tealdeer"
+brew "shihanng/gig/gig"
+cask "dash"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "ghostty"
+cask "maccy"
+cask "obsidian"
+cask "sublime-text"
+cask "sublime-merge"
+cask "visual-studio-code"
+cask "vivaldi"
+brew "mas"
+brew "httpie"
+brew "node"
+brew "pnpm"
+mas "Broadcasts", id: 1469995354
+mas "Color Picker", id: 1545870783
+mas "Hand Mirror", id: 1502839586
+mas "Velja", id: 1607635845
+EOF
+{{ end -}}
+
+{{- if and (eq .chezmoi.os "darwin") (eq $computerName "Teletype") -}}
+#!/bin/bash
+brew bundle --file=/dev/stdin <<EOF
+
+EOF
+{{ end -}}

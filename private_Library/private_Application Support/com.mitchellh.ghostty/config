@@ -1,0 +1,10 @@
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+minimum-contrast = 1.1
+term = xterm-256color
+font-family = Jetbrains Mono Regular
+font-size = 14
+font-thicken = true
+confirm-close-surface = false

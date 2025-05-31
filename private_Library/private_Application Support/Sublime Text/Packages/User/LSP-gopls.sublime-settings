@@ -1,0 +1,31 @@
+// Settings in here override those in "LSP-gopls/LSP-gopls.sublime-settings"
+{
+	// "selector": "source.go | source.gomod",
+	"selector": "source.go | source.gomod | text.html.gohtml",
+	"settings": {
+		"gopls.templateExtensions": [
+			"html",
+			"xml"
+		],
+		"gopls.analyses": {
+			"fieldalignment": true,
+			"fillreturns": true,
+			"nilness": true,
+			"nonewvars": true,
+			"shadow": true,
+			"simplifycompositelit": true,
+			"structtag": true,
+			"undeclaredname": true,
+			"unreachable": true,
+			"unusedparams": true,
+			"unusedwrite": true,
+		},
+		"gopls.usePlaceholders": true,
+		"gopls.semanticTokens": true,
+		"gopls.gofumpt": true,
+	},
+	"env": {
+		"PATH": "/opt/homebrew/bin/go",
+	},
+	"enabled": true,
+}

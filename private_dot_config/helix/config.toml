@@ -1,0 +1,12 @@
+theme = "catppuccin_mocha"
+[editor]
+line-number = "relative"
+true-color = true
+auto-pairs = true
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+[editor.soft-wrap]
+enable = true

@@ -1,0 +1,11 @@
+{
+	"packages":
+	[
+		{
+			"name": "Table Editor",
+			"refs": "tags/*",
+			"unpacked": false,
+			"url": "https://github.com/SublimeText/SublimeTableEditor.git",
+		},
+	],
+}

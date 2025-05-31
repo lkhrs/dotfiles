@@ -1,0 +1,21 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+    "lsp_format_on_save": false,
+    "inhibit_word_completions": false,
+    "show_references_in_quick_panel": true,
+    "clients": {
+        "gopls": {
+            "enabled": true,
+            "env": {
+                "PATH": "/opt/homebrew/bin/go",
+            }
+        },
+        "theme-check": {
+            "command": [
+                "/opt/homebrew/bin/theme-check-language-server"
+            ],
+            "enabled": true,
+            "selector": "text.html.liquid"
+        }
+    }
+}

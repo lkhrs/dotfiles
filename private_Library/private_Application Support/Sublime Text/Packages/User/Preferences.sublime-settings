@@ -1,0 +1,70 @@
+{
+	"theme": "auto",
+	"dark_theme": "Adaptive.sublime-theme",
+	"light_theme": "Adaptive.sublime-theme",
+	"color_scheme": "auto",
+	"font_face": "JetBrains Mono",
+	"font_size": 14,
+	"tab_size": 2,
+	"save_on_focus_lost": true,
+	"match_brackets_angle": true,
+	// "word_wrap": true,
+	// "wrap_width": 80,
+	// "wrap_width_style": "min",
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"auto_complete_cycle": true,
+	"auto_complete_use_history": true,
+	"auto_complete_trailing_symbols": true,
+	// leave this off because Emmet is tab
+	// "auto_complete_commit_on_tab": true,
+	"auto_find_in_selection": true,
+	"vintage_start_in_command_mode": true,
+	"find_selected_text": true,
+	"goto_anything_exclude_gitignore": true,
+	"ignored_packages": [
+		"Inline Fold",
+		"Jinja2",
+		"JsPrettier",
+		"LSP-eslint",
+		"LSP-file-watcher-chokidar",
+		"LSP-pyright",
+		"Vintage",
+	],
+	"folder_exclude_patterns": [
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".Trash",
+		".Trash-*",
+		".pnpm-store",
+	],
+	"added_words": [
+		"shouldn’t",
+		"I’m",
+		"Nunjucks",
+		"templating",
+		"lkhrs",
+		"11ty",
+	],
+	"rulers": [
+		80
+	],
+	"mde.auto_fold_link.enabled": false,
+	"inline_fold.rules": [
+		// Fold TailwindCSS class names
+		// Example: <div class="..."></div>
+		{
+			"fold_selector": "string.quoted.single - punctuation.definition.string, string.quoted.double - punctuation.definition.string",
+			"preceding_text": "class,className",
+		},
+	],
+	"update_check": false,
+	"index_files": true,
+	"index_exclude_patterns": [
+		"*.log",
+		"node_modules",
+		"resources",
+	],
+}

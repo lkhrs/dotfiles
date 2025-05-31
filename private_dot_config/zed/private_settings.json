@@ -1,0 +1,136 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  // "theme": {
+  //   "mode": "system",
+  //   "light": "Catppuccin Latte",
+  //   "dark": "Catppuccin Mocha"
+  // },
+  // "icon_theme": {
+  //   "mode": "system",
+  //   "light": "Catppuccin Latte",
+  //   "dark": "Catppuccin Mocha"
+  // },
+  "buffer_font_size": 14,
+  // "ui_font_size": 14,
+  "ui_font_family": "SF Pro",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": null,
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font"
+  },
+  // "tab_size": 4,
+  "scroll_beyond_last_line": "off",
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    }
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "show_edit_predictions": false,
+  "agent": {
+    "default_profile": "minimal",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2",
+    "enabled": true
+  },
+  "edit_predictions": {
+    "disabled_globs": [
+      // "*.*",
+      ".md"
+    ],
+    "mode": "subtle",
+    "enabled_in_text_threads": true
+  },
+  "languages": {
+    "HTML": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JavaScript": {
+      // "formatter": {
+      //   "external": {
+      //     "command": "prettier",
+      //     "arguments": ["--stdin-filepath", "{buffer_path}"]
+      //   }
+      // }
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "Markdown": {
+      "show_edit_predictions": false,
+    },
+    "PHP": {
+      "show_edit_predictions": true,
+      "language_servers": ["intelephense", "!phpactor", "..."]
+    },
+    "Caddyfile": {
+      "format_on_save": "on",
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "caddy",
+          "arguments": ["fmt", "-"]
+        }
+      }
+    }
+  },
+  "base_keymap": "SublimeText",
+  "cursor_blink": false,
+  "soft_wrap": "editor_width",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "calls": {
+    "mute_on_join": true,
+    "share_on_join": false
+  },
+  "chat_panel": {
+    "button": "never"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "title_bar": {
+    "show_user_picture": false,
+    "show_onboarding_banner": false
+  },
+  // Save
+  "format_on_save": "off",
+  "autosave": "on_focus_change",
+  // stop adding/removing whitespace in files
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
+  "lsp": {
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "schemaStore": {
+            "enable": false
+          }
+        }
+      }
+    }
+  },
+  "file_types": {
+    "Caddyfile": ["Caddyfile*", "*.caddyfile"]
+  }
+}
