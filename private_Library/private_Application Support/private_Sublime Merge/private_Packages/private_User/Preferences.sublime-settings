@@ -1,0 +1,18 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+
+	/*"theme": "auto",*/
+	"image_diff_style": "side-by-side",
+	"side_bar_layout": "tabs",
+	"theme": "auto",
+	"git_binary": "/opt/homebrew/bin/git",
+	"always_show_command_status": false,
+	/*"editor_path": "/Applications/Visual Studio Code.app",*/
+	/*"editor_path": "/opt/homebrew/bin/zed",*/
+	"update_check": false,
+	"font_face": "JetBrains Mono",
+	"font_size": 14,
+	"auto_fetch_delay": 1440,
+	"tab_size": 2,
+}
