@@ -6,5 +6,5 @@ minimum-contrast = 1.1
 term = xterm-256color
 font-family = Jetbrains Mono Regular
 font-size = 14
-font-thicken = true
+font-thicken = false
 confirm-close-surface = false
