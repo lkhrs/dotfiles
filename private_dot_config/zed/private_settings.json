@@ -150,22 +150,16 @@
     "go-snippets": true,
     "gosum": true,
     "html": true,
-    "ical": true,
     "ini": true,
-    "jinja2": true,
     "log": true,
     "lua": true,
     "make": true,
     "mariana-theme": true,
     "marksman": true,
     "php": true,
-    "ruby": true,
     "ssh-config": true,
-    "svelte": true,
-    "svelte-snippets": true,
     "toml": true,
     "typos": true,
     "xml": true,
-    "zig": true
   }
 }
