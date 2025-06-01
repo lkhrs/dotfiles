@@ -7,16 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  // "theme": {
-  //   "mode": "system",
-  //   "light": "Catppuccin Latte",
-  //   "dark": "Catppuccin Mocha"
-  // },
-  // "icon_theme": {
-  //   "mode": "system",
-  //   "light": "Catppuccin Latte",
-  //   "dark": "Catppuccin Mocha"
-  // },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
   "buffer_font_size": 14,
   // "ui_font_size": 14,
   "ui_font_family": "SF Pro",
