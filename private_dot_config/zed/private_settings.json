@@ -90,7 +90,6 @@
   },
   "base_keymap": "SublimeText",
   "cursor_blink": false,
-  "soft_wrap": "editor_width",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
