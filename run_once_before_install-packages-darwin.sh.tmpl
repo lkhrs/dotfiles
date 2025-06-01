@@ -66,4 +66,6 @@ EOF
 brew bundle --file=/dev/stdin <<EOF
 
 EOF
+echo "Downloading latest Catppuccin green accent override for Zed"
+curl -L -o ~/.config/zed/themes/catppuccin-green.json https://github.com/catppuccin/zed/releases/latest/download/catppuccin-green.json
 {{ end -}}

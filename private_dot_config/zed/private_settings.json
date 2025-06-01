@@ -9,8 +9,8 @@
 {
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Macchiato"
+    "light": "Catppuccin Latte (green)",
+    "dark": "Catppuccin Macchiato (green)"
   },
   "icon_theme": {
     "mode": "system",
