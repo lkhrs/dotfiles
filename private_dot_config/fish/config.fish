@@ -66,7 +66,7 @@ fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs
 # set fish_color_user brgreen
 
 # pnpm
-set -gx PNPM_HOME /Users/luke/Library/pnpm
+set -gx PNPM_HOME ~/Library/pnpm
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 # Go
