@@ -66,7 +66,7 @@
 	"index_files": true,
 	"index_exclude_patterns": [
 		"*.log",
-		"node_modules",
-		"resources",
+		"node_modules/",
+		"resources/",
 	],
 }
