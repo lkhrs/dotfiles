@@ -65,4 +65,8 @@
 		"https://github.com/kaste/Package-x-Control",
 		"/Users/luke/Library/Caches/Sublime Text/Cache/Package x Control/repository.json",
 	],
+	"channels":
+	[
+		"https://github.com/packagecontrol/thecrawl/releases/download/the-channel/channel.json",
+	],
 }
