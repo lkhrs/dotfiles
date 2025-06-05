@@ -130,7 +130,7 @@
   },
   "load_direnv": "shell_hook",
   "minimap": {
-    "show": "always",
+    "show": "never",
     "thumb": "hover",
     "thumb_border": "none"
   },
