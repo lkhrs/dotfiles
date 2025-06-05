@@ -18,7 +18,7 @@ Method 1: Download and run one-liner
 
 Method 2: Download first, add exec flag, run
 ```shell
-wget https://raw.githubusercontent.com/lkhrs/dotfiles/refs/heads/main/install.sh
+curl -fsSLO https://raw.githubusercontent.com/lkhrs/dotfiles/refs/heads/main/install.sh
 chmod +x install.sh
 ./install.sh
 ```
