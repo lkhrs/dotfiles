@@ -10,7 +10,15 @@ chezmoi init --apply --verbose https://github.com/lkhrs/dotfiles.git
 ```
 
 If chezmoi is not installed:
+
+Method 1: Download and run one-liner
 ```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lkhrs/dotfiles/refs/heads/main/install.sh)"
+```
+
+Method 2: Download first, add exec flag, run
+```shell
+wget https://raw.githubusercontent.com/lkhrs/dotfiles/refs/heads/main/install.sh
 chmod +x install.sh
 ./install.sh
 ```
