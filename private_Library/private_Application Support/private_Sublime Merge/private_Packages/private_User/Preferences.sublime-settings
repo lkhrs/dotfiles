@@ -15,4 +15,5 @@
 	"font_size": 14,
 	"auto_fetch_delay": 1440,
 	"tab_size": 2,
+	"editor_path": "/opt/homebrew/bin/zed",
 }
