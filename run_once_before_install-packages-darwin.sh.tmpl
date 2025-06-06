@@ -45,8 +45,7 @@ cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "maccy"
 cask "obsidian"
-cask "sublime-text"
-cask "sublime-merge"
+cask "zed"
 cask "visual-studio-code"
 cask "vivaldi"
 brew "mas"
@@ -59,6 +58,8 @@ mas "Color Picker", id: 1545870783
 mas "Hand Mirror", id: 1502839586
 mas "Velja", id: 1607635845
 EOF
+echo "Downloading latest Catppuccin green accent override for Zed"
+curl -L -o ~/.config/zed/themes/catppuccin-green.json https://github.com/catppuccin/zed/releases/latest/download/catppuccin-green.json
 {{ end -}}
 
 {{- if and (eq .chezmoi.os "darwin") (eq $computerName "Teletype") -}}
@@ -66,6 +67,4 @@ EOF
 brew bundle --file=/dev/stdin <<EOF
 
 EOF
-echo "Downloading latest Catppuccin green accent override for Zed"
-curl -L -o ~/.config/zed/themes/catppuccin-green.json https://github.com/catppuccin/zed/releases/latest/download/catppuccin-green.json
 {{ end -}}
