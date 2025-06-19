@@ -9,3 +9,4 @@ echo "Latest available Node version:"
 pnpm env list --remote | tail -n 1
 tldr --update
 chezmoi update
+gh extension upgrade --all
