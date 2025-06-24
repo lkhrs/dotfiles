@@ -29,9 +29,6 @@ brew "fx"
 brew "fzf"
 brew "gh"
 brew "git"
-brew "git-delta"
-brew "git-filter-repo"
-brew "git-lfs"
 brew "helix"
 brew "icann-rdap"
 brew "jq"
@@ -39,19 +36,27 @@ brew "ripgrep"
 brew "rsync"
 brew "tealdeer"
 brew "shihanng/gig/gig"
-cask "dash"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
-cask "maccy"
 cask "obsidian"
-cask "zed"
 cask "visual-studio-code"
+brew "node"
+brew "pnpm"
+EOF
+{{ end -}}
+
+{{- if and (eq .chezmoi.os "darwin") (eq $computerName "Teletype") -}}
+#!/bin/bash
+brew bundle --file=/dev/stdin <<EOF
+brew "git-delta"
+brew "git-filter-repo"
+brew "git-lfs"
+cask "dash"
+cask "zed"
 cask "vivaldi"
 brew "mas"
 brew "httpie"
-brew "node"
-brew "pnpm"
 brew "biome"
 mas "Broadcasts", id: 1469995354
 mas "Color Picker", id: 1545870783
@@ -60,11 +65,4 @@ mas "Velja", id: 1607635845
 EOF
 echo "Downloading latest Catppuccin green accent override for Zed"
 curl -fsSL -o ~/.config/zed/themes/catppuccin-green.json https://github.com/catppuccin/zed/releases/latest/download/catppuccin-green.json
-{{ end -}}
-
-{{- if and (eq .chezmoi.os "darwin") (eq $computerName "Teletype") -}}
-#!/bin/bash
-brew bundle --file=/dev/stdin <<EOF
-
-EOF
 {{ end -}}
