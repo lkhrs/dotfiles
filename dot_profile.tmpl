@@ -1,0 +1,7 @@
+export EDITOR=hx
+{{- if ne .chezmoi.hostname "Teletype" }}
+export VISUAL=subl
+{{- end }}
+{{- if eq .chezmoi.hostname "Teletype" }}
+export VISUAL=zed
+{{- end }}

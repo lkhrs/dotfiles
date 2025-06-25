@@ -27,11 +27,16 @@
 	"ignored_packages": [
 		"Inline Fold",
 		"Jinja2",
+		"LSP-pyright",
+		"Vintage",
+{{- if eq .chezmoi.hostname "Teletype" }}
 		"JsPrettier",
 		"LSP-eslint",
 		"LSP-file-watcher-chokidar",
-		"LSP-pyright",
-		"Vintage",
+{{- end }}
+{{- if ne .chezmoi.hostname "Teletype" }}
+		"LSP-biome"
+{{- end }}
 	],
 	"folder_exclude_patterns": [
 		".svn",

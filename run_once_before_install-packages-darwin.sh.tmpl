@@ -1,6 +1,3 @@
-{{- /* get hostname without domain */}}
-{{- $computerName := output "scutil" "--get" "ComputerName" | trim }}
-
 {{- /* common packages */}}
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
@@ -41,7 +38,7 @@ brew "pnpm"
 EOF
 {{ end -}}
 
-{{- if and (eq .chezmoi.os "darwin") (eq $computerName "Teletype") -}}
+{{- if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "Teletype") -}}
 #!/bin/bash
 brew bundle --file=/dev/stdin <<EOF
 brew "git-delta"
