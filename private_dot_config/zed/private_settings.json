@@ -17,7 +17,7 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Macchiato"
   },
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   // "ui_font_size": 14,
   "ui_font_family": "SF Pro",
   "buffer_font_family": "JetBrains Mono",
@@ -159,6 +159,6 @@
     "ssh-config": true,
     "toml": true,
     "typos": true,
-    "xml": true,
+    "xml": true
   }
 }

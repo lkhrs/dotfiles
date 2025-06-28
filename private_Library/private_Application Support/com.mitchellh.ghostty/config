@@ -6,6 +6,6 @@ mouse-hide-while-typing = true
 minimum-contrast = 1.1
 term = xterm-256color
 font-family = Jetbrains Mono Regular
-font-size = 14
+font-size = 13
 font-thicken = true
 confirm-close-surface = false
