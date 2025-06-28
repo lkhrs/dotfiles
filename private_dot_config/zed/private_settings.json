@@ -137,7 +137,6 @@
   "auto_install_extensions": {
     "astro": true,
     "basher": true,
-    "biome": true,
     "caddyfile": true,
     "catppuccin": true,
     "catppuccin-icons": true,
