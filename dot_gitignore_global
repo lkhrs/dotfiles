@@ -4,3 +4,4 @@
 *.sublime-workspace
 *.sublime-project
 .zed/settings.json
+.idea/
