@@ -17,14 +17,17 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Macchiato"
   },
-  "buffer_font_size": 13,
+  "max_tabs": 10,
+  "buffer_font_size": 12,
   "ui_font_family": "SF Pro",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": null,
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font"
+    "font_family": "JetBrainsMono Nerd Font",
+    "toolbar": {
+      "breadcrumbs": false
+    }
   },
-  // "tab_size": 4,
   "scroll_beyond_last_line": "off",
   "scrollbar": {
     "axes": {
@@ -32,20 +35,18 @@
     }
   },
   "agent": {
-    "default_profile": "minimal",
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "version": "2",
-    "enabled": true
+      "model": "gpt-5"
+    }
   },
   "show_edit_predictions": false,
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "copilot"
   },
   "edit_predictions": {
-    "disabled_globs": ["*.*"],
+    "disabled_globs": [""],
     "mode": "subtle"
   },
   "languages": {
@@ -125,7 +126,8 @@
     }
   },
   "file_types": {
-    "Caddyfile": ["Caddyfile*", "*.caddyfile"]
+    "Caddyfile": ["Caddyfile*", "*.caddyfile"],
+    "Blade": ["*.blade.php"]
   },
   "load_direnv": "shell_hook",
   "minimap": {
