@@ -17,6 +17,7 @@
 		"FileIcons Mono",
 		"Gomod",
 		"gruvbox",
+		"Handlebars",
 		"Hugo Snippets",
 		"iA Writer",
 		"Inline Fold",
@@ -68,6 +69,6 @@
 	],
 	"channels":
 	[
-		"https://github.com/packagecontrol/thecrawl/releases/download/the-channel/channel.json",
+		"https://packages.sublimetext.io/channel.json",
 	],
 }
