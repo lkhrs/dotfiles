@@ -1,11 +1,10 @@
-theme = light:catppuccin-latte, dark:catppuccin-macchiato
+theme = light:catppuccin latte, dark:catppuccin macchiato
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 mouse-hide-while-typing = true
 minimum-contrast = 1.1
 term = xterm-256color
-font-family = Jetbrains Mono Regular
 font-size = 12
 font-thicken = true
 confirm-close-surface = false
