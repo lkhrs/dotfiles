@@ -159,6 +159,8 @@
     "ssh-config": true,
     "toml": true,
     "typos": true,
-    "xml": true
+    "xml": true,
+    "react-typescript-snippets": true,
+    "snippets":true
   }
 }
