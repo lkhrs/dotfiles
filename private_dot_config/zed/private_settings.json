@@ -162,5 +162,6 @@
     "xml": true,
     "react-typescript-snippets": true,
     "snippets":true
-  }
+  },
+"helix_mode": true 
 }
