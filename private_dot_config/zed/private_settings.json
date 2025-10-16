@@ -7,6 +7,20 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true
+    }
+  },
+  "zoomed_padding": false,
+  "tabs": {
+    "close_position": "left",
+    "file_icons": true,
+    "git_status": true
+  },
+  "completions": {
+    "lsp_fetch_timeout_ms": 0
+  },
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte (green)",
@@ -49,26 +63,6 @@
     "mode": "subtle"
   },
   "languages": {
-    "HTML": {
-      "formatter": {
-        "language_server": {
-          "name": "biome"
-        }
-      }
-    },
-    "JavaScript": {
-      // "formatter": {
-      //   "external": {
-      //     "command": "prettier",
-      //     "arguments": ["--stdin-filepath", "{buffer_path}"]
-      //   }
-      // }
-      "formatter": {
-        "language_server": {
-          "name": "biome"
-        }
-      }
-    },
     "Markdown": {
       "show_edit_predictions": false
     },
@@ -97,13 +91,12 @@
     "mute_on_join": true,
     "share_on_join": false
   },
-  "chat_panel": {
-    "button": "never"
-  },
   "collaboration_panel": {
     "button": false
   },
   "title_bar": {
+    "show_sign_in": true,
+    "show_branch_icon": true,
     "show_user_picture": false,
     "show_onboarding_banner": false
   },
@@ -162,5 +155,5 @@
     "react-typescript-snippets": true,
     "snippets":true
   },
-"helix_mode": true 
+// "helix_mode": true 
 }
