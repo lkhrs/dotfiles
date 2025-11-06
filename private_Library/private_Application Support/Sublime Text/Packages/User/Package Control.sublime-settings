@@ -5,7 +5,6 @@
 	],
 	"installed_packages": [
 		"Astro",
-		"Catppuccin color schemes",
 		"Copy Relative Path",
 		"DashDoc",
 		"DocBlockr",

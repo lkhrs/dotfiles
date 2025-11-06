@@ -21,16 +21,6 @@
   "completions": {
     "lsp_fetch_timeout_ms": 0
   },
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte (green)",
-    "dark": "Catppuccin Macchiato (green)"
-  },
-  "icon_theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Macchiato"
-  },
   "max_tabs": 10,
   "buffer_font_size": 13,
   "ui_font_family": "SF Pro",
@@ -48,13 +38,14 @@
     }
   },
   "agent": {
-    "default_profile": "ask",
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5"
     }
   },
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "features": {
     "edit_prediction_provider": "copilot"
   },
@@ -63,6 +54,12 @@
     "mode": "subtle"
   },
   "languages": {
+    "Go": {
+      "show_edit_predictions": true
+    },
+    "Rust": {
+      "show_edit_predictions": true
+    },
     "Markdown": {
       "show_edit_predictions": false
     },
@@ -131,8 +128,6 @@
     "astro": true,
     "basher": true,
     "caddyfile": true,
-    "catppuccin": true,
-    "catppuccin-icons": true,
     "csv": true,
     "emmet": true,
     "env": true,
