@@ -73,7 +73,7 @@ autocmd! User GoyoLeave Limelight!
     nmap ga <Plug>(EasyAlign)
 
 let g:airline_theme='gruvbox'
-set notermguicolors
+set termguicolors
 let g:gruvbox_italic=1
 colorscheme gruvbox
 
