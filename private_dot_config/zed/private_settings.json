@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "redact_private_values": true,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "JetBrains Mono",
   "git": {
     "inline_blame": {
       "show_commit_summary": true
@@ -22,11 +25,7 @@
     "lsp_fetch_timeout_ms": 0
   },
   "max_tabs": 10,
-  "buffer_font_size": 13,
-  "ui_font_family": "SF Pro",
-  "buffer_font_family": "JetBrains Mono",
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
     "toolbar": {
       "breadcrumbs": false
     }
