@@ -17,7 +17,7 @@ fish_add_path /opt/homebrew/share/fish/vendor_completions.d/
 fish_add_path /opt/homebrew/sbin
 
 # Homebrew disable env hints
-set HOMEBREW_NO_ENV_HINTS 0
+set HOMEBREW_NO_ENV_HINTS 1
 
 # Homebrew forbid casks
 # set HOMEBREW_FORBIDDEN_CASKS netnewswire
