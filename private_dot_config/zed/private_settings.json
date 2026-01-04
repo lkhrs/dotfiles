@@ -75,6 +75,13 @@
           "arguments": ["fmt", "-"]
         }
       }
+    },
+    "Python": {
+      "language_servers": [
+        "ty",
+        "!basedpyright",
+        "..."
+      ]
     }
   },
   "base_keymap": "SublimeText",
