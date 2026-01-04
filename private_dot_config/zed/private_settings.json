@@ -7,8 +7,20 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "redact_private_values": true,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "buffer_font_size": 13.0,
   "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16.0,
+  "redact_private_values": true,
   "buffer_font_family": "JetBrains Mono",
   "git": {
     "inline_blame": {
