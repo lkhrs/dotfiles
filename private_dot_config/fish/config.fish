@@ -67,7 +67,7 @@ fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs
 
 # pnpm
 set -gx PNPM_HOME ~/Library/pnpm
-set -gx PATH "$PNPM_HOME" $PATH
+fish_add_path "$PNPM_HOME"
 # pnpm end
 # Go
 fish_add_path ~/go/bin
@@ -93,3 +93,6 @@ and . (code --locate-shell-integration-path fish)
 function fish
     source ~/.config/fish/config.fish
 end
+
+# Mole shell completion
+set -l output (mole completion fish 2>/dev/null); and echo "$output" | source
