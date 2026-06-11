@@ -5,3 +5,4 @@
 *.sublime-project
 .zed/settings.json
 .idea/
+PLAN.md
