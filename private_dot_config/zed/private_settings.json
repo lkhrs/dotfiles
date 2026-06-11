@@ -7,76 +7,168 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "buffer_font_size": 13.0,
+  "buffer_font_family": "JetBrains Mono",
+  "diff_view_style": "unified",
+  "cli_default_open_behavior": "new_window",
+  "context_servers": {
+    "chrome-devtools-mcp-zed": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "browser_url": null,
+        "ws_endpoint": null,
+        "ws_headers": null,
+        "auto_connect": null,
+        "channel": null,
+        "headless": null,
+        "isolated": null,
+        "user_data_dir": null,
+        "viewport": null,
+        "executable_path": null,
+        "chrome_arg": [],
+        "proxy_server": null,
+        "accept_insecure_certs": null,
+        "category_emulation": null,
+        "category_performance": null,
+        "category_network": null,
+        "log_file": null,
+        "extra_args": [],
+      },
+    },
+  },
+  "proxy": "",
+  "context_server_timeout": 60,
+  "outline_panel": {
+    "dock": "left",
+  },
+  "semantic_tokens": "combined",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+      "default_config_options": {
+        "reasoning_effort": "medium",
+        "model": "gpt-5.5",
+      },
+      "favorite_config_option_values": {
+        "reasoning_effort": ["medium"],
+        "model": ["gpt-5.4-mini", "gpt-5.5"],
+      },
+    },
+  },
+  "scroll_beyond_last_line": "off",
+  "git_panel": {
+    "show_count_badge": true,
+    "file_icons": true,
+    "collapse_untracked_diff": true,
+    "dock": "left",
+    "tree_view": false,
+  },
+  "toolbar": {
+    "code_actions": true,
+  },
+  "snippet_sort_order": "top",
+  "show_signature_help_after_edits": true,
+  "auto_signature_help": true,
+  "project_panel": {
+    "hide_hidden": false,
+    "git_status_indicator": true,
+    "diagnostic_badges": true,
+    "dock": "left",
+    "sort_mode": "directories_first",
+    "hide_root": true,
+  },
+  "preview_tabs": {
+    "enable_preview_multibuffer_from_code_navigation": false,
+  },
   "icon_theme": {
     "mode": "system",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "One Dark",
   },
-  "buffer_font_size": 13.0,
   "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 16.0,
+  "disable_ai": false,
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": false,
+  },
   "redact_private_values": true,
-  "buffer_font_family": "JetBrains Mono",
   "git": {
     "inline_blame": {
-      "show_commit_summary": true
-    }
+      "show_commit_summary": true,
+    },
   },
-  "zoomed_padding": false,
   "tabs": {
     "close_position": "left",
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
   "completions": {
-    "lsp_fetch_timeout_ms": 0
+    "lsp_fetch_timeout_ms": 0,
   },
   "max_tabs": 10,
   "terminal": {
     "toolbar": {
-      "breadcrumbs": false
-    }
+      "breadcrumbs": false,
+    },
   },
-  "scroll_beyond_last_line": "off",
   "scrollbar": {
-    "axes": {
-      "horizontal": false
-    }
+    "axes": {},
   },
   "agent": {
-    "always_allow_tool_actions": true,
+    "flexible": true,
+    "play_sound_when_agent_done": "always",
+    "sidebar_side": "left",
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "favorite_models": [
+      {
+        "provider": "openai-subscribed",
+        "model": "gpt-5.5",
+        "enable_thinking": true,
+        "effort": "medium",
+      },
+      {
+        "provider": "openai-subscribed",
+        "model": "gpt-5.4-mini",
+        "enable_thinking": true,
+        "effort": "medium",
+      },
+    ],
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5"
-    }
+      "effort": "medium",
+      "enable_thinking": true,
+      "provider": "openai-subscribed",
+      "model": "gpt-5.5",
+    },
   },
   "show_edit_predictions": true,
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "edit_predictions": {
+    "allow_data_collection": "no",
+    "provider": "copilot",
     "disabled_globs": [""],
-    "mode": "subtle"
   },
   "languages": {
     "Go": {
-      "show_edit_predictions": true
+      "show_edit_predictions": true,
     },
     "Rust": {
-      "show_edit_predictions": true
+      "show_edit_predictions": true,
     },
     "Markdown": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
     },
     "PHP": {
       "show_edit_predictions": true,
-      "language_servers": ["intelephense", "!phpactor", "..."]
+      "language_servers": ["intelephense", "!phpactor", "..."],
     },
     "Caddyfile": {
       "format_on_save": "on",
@@ -84,39 +176,36 @@
       "formatter": {
         "external": {
           "command": "caddy",
-          "arguments": ["fmt", "-"]
-        }
-      }
+          "arguments": ["fmt", "-"],
+        },
+      },
     },
     "Python": {
-      "language_servers": [
-        "ty",
-        "!basedpyright",
-        "..."
-      ]
-    }
+      "language_servers": ["ty", "!basedpyright", "!pyright", "ruff"],
+    },
   },
   "base_keymap": "SublimeText",
   "cursor_blink": false,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "calls": {
     "mute_on_join": true,
-    "share_on_join": false
+    "share_on_join": false,
   },
   "collaboration_panel": {
-    "button": false
+    "dock": "left",
+    "button": false,
   },
   "title_bar": {
+    "show_branch_status_icon": true,
     "show_sign_in": true,
-    "show_branch_icon": true,
     "show_user_picture": false,
-    "show_onboarding_banner": false
+    "show_onboarding_banner": false,
   },
   // Save
-  "format_on_save": "off",
+  "format_on_save": "on",
   "autosave": "on_focus_change",
   // stop adding/removing whitespace in files
   "ensure_final_newline_on_save": false,
@@ -126,26 +215,23 @@
       "settings": {
         "yaml": {
           "schemaStore": {
-            "enable": false
-          }
-        }
-      }
-    }
+            "enable": false,
+          },
+        },
+      },
+    },
   },
   "file_types": {
     "Caddyfile": ["Caddyfile*", "*.caddyfile"],
-    "Blade": ["*.blade.php"]
+    "Blade": ["*.blade.php"],
   },
   "load_direnv": "shell_hook",
-  "minimap": {
-    "show": "never",
-    "thumb": "hover",
-    "thumb_border": "none"
-  },
+  "minimap": {},
   "auto_install_extensions": {
     "astro": true,
     "basher": true,
     "caddyfile": true,
+    "dockerfile": true,
     "csv": true,
     "emmet": true,
     "env": true,
@@ -158,7 +244,6 @@
     "log": true,
     "lua": true,
     "make": true,
-    "mariana-theme": true,
     "marksman": true,
     "php": true,
     "ssh-config": true,
@@ -166,7 +251,11 @@
     "typos": true,
     "xml": true,
     "react-typescript-snippets": true,
-    "snippets":true
+    "snippets": true,
+    "zed-php-snippets": true,
+    "zed-comment": true,
+    "editor-config-zed": true,
+    "codeowners-zed": true,
   },
-// "helix_mode": true 
+  // "helix_mode": true
 }
