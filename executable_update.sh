@@ -12,5 +12,4 @@ fi
 tldr --update
 chezmoi update
 gh extension upgrade --all
-# phpactor 
 (cd ~/.local/share/phpactor && composer update -W --no-interaction --prefer-stable && phpactor --version)
