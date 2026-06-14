@@ -40,7 +40,7 @@
   "proxy": "",
   "context_server_timeout": 60,
   "outline_panel": {
-    "dock": "left",
+    "dock": "right",
   },
   "semantic_tokens": "combined",
   "agent_servers": {
@@ -61,7 +61,7 @@
     "show_count_badge": true,
     "file_icons": true,
     "collapse_untracked_diff": true,
-    "dock": "left",
+    "dock": "right",
     "tree_view": false,
   },
   "toolbar": {
@@ -74,7 +74,7 @@
     "hide_hidden": false,
     "git_status_indicator": true,
     "diagnostic_badges": true,
-    "dock": "left",
+    "dock": "right",
     "sort_mode": "directories_first",
     "hide_root": true,
   },
@@ -124,7 +124,7 @@
     "flexible": true,
     "play_sound_when_agent_done": "always",
     "sidebar_side": "left",
-    "dock": "right",
+    "dock": "left",
     "tool_permissions": {
       "default": "allow",
     },
@@ -168,7 +168,7 @@
     },
     "PHP": {
       "show_edit_predictions": true,
-      "language_servers": ["intelephense", "!phpactor", "..."],
+      "language_servers": ["..."],
     },
     "Caddyfile": {
       "format_on_save": "on",
@@ -195,7 +195,7 @@
     "share_on_join": false,
   },
   "collaboration_panel": {
-    "dock": "left",
+    "dock": "right",
     "button": false,
   },
   "title_bar": {
