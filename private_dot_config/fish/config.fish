@@ -17,10 +17,7 @@ fish_add_path /opt/homebrew/share/fish/vendor_completions.d/
 fish_add_path /opt/homebrew/sbin
 
 # Homebrew disable env hints
-set HOMEBREW_NO_ENV_HINTS 1
-
-# Homebrew forbid casks
-# set HOMEBREW_FORBIDDEN_CASKS netnewswire
+set -gx HOMEBREW_NO_ENV_HINTS 1
 
 # add composer
 fish_add_path ~/.composer/vendor/bin
@@ -55,8 +52,6 @@ fish_add_path "$PNPM_HOME"
 # pnpm end
 # Go
 fish_add_path ~/go/bin
-
-starship init fish | source
 
 string match -q "$TERM_PROGRAM" vscode
 and . (code --locate-shell-integration-path fish)
