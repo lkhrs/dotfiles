@@ -168,7 +168,7 @@
     },
     "PHP": {
       "show_edit_predictions": true,
-      "language_servers": ["..."],
+      "language_servers": ["!phptools", "!intelephense", "..."],
     },
     "Caddyfile": {
       "format_on_save": "on",
