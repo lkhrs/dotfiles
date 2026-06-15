@@ -116,6 +116,7 @@
     "toolbar": {
       "breadcrumbs": false,
     },
+    "font_fallbacks": ["JetBrainsMono Nerd Font Mono"],
   },
   "scrollbar": {
     "axes": {},
