@@ -47,6 +47,7 @@
     "codex-acp": {
       "type": "registry",
       "default_config_options": {
+        "mode": "auto",
         "reasoning_effort": "medium",
         "model": "gpt-5.5",
       },
@@ -88,8 +89,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark",
   },
   "ui_font_family": ".SystemUIFont",
   "disable_ai": false,
