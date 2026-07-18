@@ -118,6 +118,10 @@
       "breadcrumbs": false,
     },
     "font_fallbacks": ["JetBrainsMono Nerd Font Mono"],
+    "env": {
+      "EDITOR": "zed --wait",
+      "VISUAL": "zed --wait",
+    },
   },
   "scrollbar": {
     "axes": {},
