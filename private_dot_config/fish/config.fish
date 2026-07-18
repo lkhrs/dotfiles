@@ -77,3 +77,6 @@ end
 
 # Mole shell completion
 set -l output (mole completion fish 2>/dev/null); and echo "$output" | source
+
+# Set Zed as terminal editor
+set -Ux EDITOR "zed --wait"
