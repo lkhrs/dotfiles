@@ -89,8 +89,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Ayu Dark",
+    "light": "One Light",
+    "dark": "One Dark",
   },
   "ui_font_family": ".SystemUIFont",
   "disable_ai": false,
